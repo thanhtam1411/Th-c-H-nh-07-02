@@ -15,7 +15,7 @@ public class Bai3 {
      age = 2023 - year;
      if (age < 16) {
         ageGroup = "tuoi vi thanh nien ";
-       } else if ( age >= 16|| age >18) {
+       } else if ( age >= 16|| age < q18) {
             ageGroup ="tuoi truong thanh ";
             } else {
                 ageGroup = "gia roi!";
