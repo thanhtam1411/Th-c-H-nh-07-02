@@ -9,10 +9,11 @@ public class Hinhtron {
     
 //Nhap cac phuong thuc
     public void Nhapbankinh(){
-        Scanner ht = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Nhap vao ban kinh: ");
-        r = ht.nextFloat();
-    }
+            r = sc.nextFloat(); 
+            sc.close();
+}
     
     public void Tinhchuvi(){
         cv = 2 * r * PI;
