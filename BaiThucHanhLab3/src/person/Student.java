@@ -1,3 +1,4 @@
+package person;
 import java.util.Scanner;
 
 public class Student {
