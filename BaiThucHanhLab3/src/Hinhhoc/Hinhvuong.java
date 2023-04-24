@@ -2,17 +2,14 @@ package Hinhhoc;
 
 import java.util.Scanner;
 
-public class Hinhvuong extends Hinhchunhat{
+public class Hinhvuong extends Hinhchunhat {
+    public Hinhvuong(){
+        super.setTen("Hinh vuong");
+    }
 
-            public void Hinhhvuong() {
-                ten = "Hinh vuong";
-            }
-
-            public void nhapcanh(){
-                System.out.println("Canh = ");
-                Scanner sc = new Scanner (System.in);
-                dai = rong = sc.nextFloat();
-                sc.close();
-            }
-        }
-
+    public void Nhapcanh(Scanner sc ) {
+        System.out.print("Nhap canh: ");
+        super.setdai(sc.nextFloat());
+        super.setrong(sc.nextFloat());
+    }
+}

@@ -6,33 +6,47 @@ public class Hinhchunhat extends Hinhhoc{
     public float dai ;
     public float rong;
 
-    //Constructor
-    public void HinhChuNhat() {
-        ten = "Hình Chữ Nhật";
-    }
-    
-    public void nhapchieudai() {
-        System.out.println("Chiểu dài = ");
-        Scanner sc = new Scanner(System.in);
-        dai = sc.nextFloat();
-        sc.close();
+    public float getrong() {
+        return rong;
     }
 
-    public void nhapchieurong() {
-        System.out.println("Chiều rộng = ");
-        Scanner sc = new Scanner(System.in);
-        rong = sc.nextFloat();
-        sc.close();
+    public void setrong(float rong) {
+        this.rong = rong;
     }
 
-    public void tinhchuvi() {
-        chuvi = 2 * (dai + rong);
+    public float getdai() {
+        return dai;
     }
 
-    public void tinhdientich() {
-        dientich = dai * rong;
+    public void setdai(float dai){
+        this.dai = dai;
     }
-        }
+
+    public Hinhchunhat() {
+        super.setTen("Hinh Chu Nhat");
+    }
+
+    public void Nhapchieudai(Scanner sc) {
+        System.out.print(" Nhap chieu dai: ");
+        setdai(sc.nextFloat());
+    }
+
+    public void Nhapchieurong(Scanner sc) {
+        System.out.print("Nhap chieu rong: ");
+        setrong(sc.nextFloat());
+    }
+
+    public void Tinhchuvi() {
+        float chuvi = 2 * (dai + rong);
+        setchuvi(chuvi);
+    }
+
+    public void Tinhdientich() {
+        float dientich = dai * rong;
+        setdientich(dientich);
+    }
+}
+
         
 
 
